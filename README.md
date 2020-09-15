@@ -1,2 +1,3 @@
 # example-_repo
-first repo for DS 1 (p 8105)
+
+This is a quick, first git and github repo as an example for Data Science 1 (p 8105)
