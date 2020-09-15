@@ -2,7 +2,7 @@
 title: "Simple document"
 author: Purnima Sharma
 date: September 2020
-output: html_document
+output: github_document
     
 ---
 
