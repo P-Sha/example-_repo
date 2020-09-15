@@ -1,0 +1,65 @@
+---
+title: "Simple document"
+author: Purnima Sharma
+date: September 2020
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide 
+---
+
+I'm an R Markdown document! 
+
+# Section 1
+
+Here's a **code chunk** that samples from , asterisk make it bold
+a _normal distribution_:  , underscores make it italicized.
+r code below starts with 3 back ticks and r in brackets (shortcut: alt + ctrl +i)
+
+```{r}
+samp = rnorm(100)
+length(samp)
+```
+
+# Section 2
+
+I can take the mean of the sample, too! And written text and code can be combined!
+The mean is `r mean(samp)`.
+
+# Section 3
+
+## Data frame and plot
+
+The code below creates a dataframe and generates a plot.
+
+```{r plot_example, message FALSE}
+library(tidyverse)
+
+plot_df = tibble(
+  x = rnorm(500, mean = 2, sd = 4),
+  y = 3 - 4.2 * x + rnorm(500)
+)
+
+ggplot(plot_df, aes(x = x, y = y)) + geom_point()
+```
+
+This plot is really great!! It shows a linear relationship just as expected.
+
+The data frame has `r nrow(plt_df)` rows.
+
+Here is a list:
+* This is my first list item
+* Lists need at least two items
+  * This list has a sub item
+* Third list item
+
+#### Table
+
+col 1 | col 2
+----- | -----
+a     | b
+c     | d
+
+
+
