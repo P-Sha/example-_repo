@@ -1,0 +1,25 @@
+---
+title: "Simple document"
+author: Purnima Sharma
+date: September 2020
+output: html_document
+    
+---
+
+I'm an R Markdown document! 
+
+# Section 1
+
+Here's a **code chunk** that samples from , asterisk make it bold
+a _normal distribution_:  , underscores make it italicized.
+r code below starts with 3 back ticks and r in brackets (shortcut: alt + ctrl +i)
+
+```{r}
+samp = rnorm(100)
+length(samp)
+```
+
+# Section 2
+
+I can take the mean of the sample, too! And written text and code can be combined!
+The mean is `r mean(samp)`.
