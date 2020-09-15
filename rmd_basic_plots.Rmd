@@ -2,7 +2,7 @@
 title: "Basic Plots"
 author: "Purnima Sharma"
 date: 2020-09-15
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include = FALSE}
